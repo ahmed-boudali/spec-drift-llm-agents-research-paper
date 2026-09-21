@@ -1,0 +1,21 @@
+# Secrets -- never commit. Copy .env.example to .env and fill it in locally.
+.env
+*.key
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Experiment outputs (regenerate with run.py; see results/README.md)
+results/C1.jsonl
+results/C2.jsonl
+results/C3.jsonl
+results/C4.jsonl
+results/*.jsonl.lock
+results/raw/
+
+# OS
+Thumbs.db
+.DS_Store

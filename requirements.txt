@@ -1,0 +1,4 @@
+# Only run.py needs a third-party package. Everything else -- the extractor,
+# the drift computation, the validator, the benchmark generator, the repair
+# procedure -- runs on the Python 3.10+ standard library alone.
+requests>=2.28

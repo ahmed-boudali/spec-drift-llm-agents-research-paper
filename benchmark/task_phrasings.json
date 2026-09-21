@@ -1,0 +1,323 @@
+{
+  "new-invoice": {
+    "fr": "créer une nouvelle facture fournisseur (brouillon)",
+    "en": "create a new supplier invoice",
+    "ar": "إنشاء فاتورة مورد جديدة",
+    "dar": "na3mel facture fournisseur jdida"
+  },
+  "export-excel": {
+    "fr": "exporter la liste en Excel",
+    "en": "export the list to Excel",
+    "ar": "تصدير القائمة إلى إكسل",
+    "dar": "n'exporti el lista l Excel"
+  },
+  "export-pdf": {
+    "fr": "imprimer/exporter en PDF",
+    "en": "export the list to PDF",
+    "ar": "تصدير القائمة إلى PDF",
+    "dar": "n'exporti el lista l PDF"
+  },
+  "total-outstanding": {
+    "fr": "kPI : montant total impayé"
+  },
+  "total-paid-month": {
+    "fr": "kPI : total payé ce mois"
+  },
+  "overdue-risk": {
+    "fr": "kPI : factures en retard"
+  },
+  "upcoming-payments": {
+    "fr": "kPI : échéances dans 7 jours"
+  },
+  "view-doc": {
+    "fr": "voir le justificatif (PDF/image)"
+  },
+  "edit": {
+    "fr": "modifier une facture brouillon"
+  },
+  "validate": {
+    "fr": "valider une facture (brouillon → validée)",
+    "en": "validate an invoice",
+    "ar": "التحقق من فاتورة",
+    "dar": "nvalidi facture"
+  },
+  "record-payment": {
+    "fr": "enregistrer un paiement fournisseur",
+    "en": "record a supplier payment",
+    "ar": "تسجيل دفعة لمورد",
+    "dar": "nsajjel khlas fournisseur"
+  },
+  "cancel": {
+    "fr": "annuler une facture"
+  },
+  "reset-invoices": {
+    "fr": "réinitialiser tous les filtres de la liste"
+  },
+  "focus-invoices": {
+    "fr": "mode focus : masquer les KPI pour agrandir le tableau"
+  },
+  "new-client-invoice": {
+    "fr": "créer une nouvelle facture client",
+    "en": "create a new client invoice",
+    "ar": "إنشاء فاتورة عميل جديدة",
+    "dar": "na3mel facture client jdida"
+  },
+  "export-excel-ci": {
+    "fr": "exporter en Excel"
+  },
+  "export-pdf-ci": {
+    "fr": "exporter en PDF"
+  },
+  "view-doc-ci": {
+    "fr": "voir le justificatif"
+  },
+  "validate-ci": {
+    "fr": "valider la facture client"
+  },
+  "record-payment-ci": {
+    "fr": "encaisser un paiement client"
+  },
+  "cancel-ci": {
+    "fr": "annuler la facture client"
+  },
+  "reset-invoices-ci": {
+    "fr": "réinitialiser tous les filtres"
+  },
+  "new-op": {
+    "fr": "créer une nouvelle opération de trésorerie (bouton \"Nouvelle opération\")",
+    "en": "create a new cash operation",
+    "ar": "إنشاء عملية خزينة جديدة",
+    "dar": "na3mel 3amaliya jdida fil tresorerie"
+  },
+  "total-inflows": {
+    "fr": "kPI : total encaissements validés"
+  },
+  "total-outflows": {
+    "fr": "kPI : total décaissements validés"
+  },
+  "net-flow": {
+    "fr": "kPI : flux net (encaissements - décaissements)"
+  },
+  "draft-ops": {
+    "fr": "kPI : opérations en brouillon"
+  },
+  "view-cheque": {
+    "fr": "voir l'image du chèque"
+  },
+  "view-avis": {
+    "fr": "voir l'avis de débit"
+  },
+  "edit-op": {
+    "fr": "modifier une opération brouillon"
+  },
+  "validate-op": {
+    "fr": "valider une opération"
+  },
+  "cancel-op": {
+    "fr": "annuler une opération"
+  },
+  "cash-settings": {
+    "fr": "régler le solde d'ouverture de la caisse",
+    "en": "set the opening cash balance",
+    "ar": "ضبط الرصيد الافتتاحي",
+    "dar": "nsalla7 el solde el awwalani"
+  },
+  "export-cash": {
+    "fr": "exporter les opérations en Excel"
+  },
+  "reset-cash": {
+    "fr": "réinitialiser les filtres de la page"
+  },
+  "create-supplier": {
+    "fr": "créer un nouveau fournisseur",
+    "en": "add a new supplier",
+    "ar": "إضافة مورد جديد",
+    "dar": "nzid fournisseur jdid"
+  },
+  "edit-supplier": {
+    "fr": "modifier un fournisseur"
+  },
+  "delete-supplier": {
+    "fr": "supprimer un fournisseur"
+  },
+  "export-suppliers": {
+    "fr": "exporter la liste des fournisseurs en Excel"
+  },
+  "reset-suppliers": {
+    "fr": "réinitialiser les filtres"
+  },
+  "create-client": {
+    "fr": "créer un nouveau client",
+    "en": "add a new client",
+    "ar": "إضافة عميل جديد",
+    "dar": "nzid client jdid"
+  },
+  "edit-client": {
+    "fr": "modifier un client"
+  },
+  "delete-client": {
+    "fr": "supprimer un client"
+  },
+  "view-client": {
+    "fr": "ouvrir la fiche détaillée d'un client"
+  },
+  "export-clients": {
+    "fr": "exporter la liste des clients en Excel"
+  },
+  "reset-clients": {
+    "fr": "réinitialiser les filtres"
+  },
+  "fd-period": {
+    "fr": "choisir la période analysée (Mois / Trimestre / Année / Plage)",
+    "en": "change the analysed period",
+    "ar": "تغيير الفترة المحللة",
+    "dar": "nbaddel el période"
+  },
+  "doc-search": {
+    "fr": "rechercher un document ou une entité",
+    "en": "search for a document",
+    "ar": "البحث عن مستند",
+    "dar": "nlawej 3la document"
+  },
+  "doc-view": {
+    "fr": "ouvrir un document dans la visionneuse"
+  },
+  "doc-download": {
+    "fr": "télécharger un document"
+  },
+  "doc-select-all": {
+    "fr": "tout sélectionner"
+  },
+  "doc-bulk-download": {
+    "fr": "télécharger la sélection"
+  },
+  "doc-clear-filters": {
+    "fr": "réinitialiser les filtres"
+  },
+  "intelligence": {
+    "fr": "ouvrir la page (sidebar)"
+  },
+  "export-report-pdf": {
+    "fr": "exporter le rapport IA en PDF",
+    "en": "export the AI report to PDF",
+    "ar": "تصدير التقرير إلى PDF",
+    "dar": "n'exporti el rapport l PDF"
+  },
+  "dashboard": {
+    "fr": "tableau de bord principal"
+  },
+  "finance-menu": {
+    "fr": "ouvrir/fermer le menu Finance dans la sidebar"
+  },
+  "finance-dashboard": {
+    "fr": "dashboard Finance"
+  },
+  "cash": {
+    "fr": "page Trésorerie"
+  },
+  "supplier-invoices": {
+    "fr": "factures Fournisseurs"
+  },
+  "client-invoices": {
+    "fr": "factures Clients"
+  },
+  "suppliers": {
+    "fr": "fournisseurs"
+  },
+  "clients": {
+    "fr": "clients"
+  },
+  "finance-docs": {
+    "fr": "documents Finance"
+  },
+  "new-project": {
+    "fr": "créer un nouveau projet (code unique obligatoire)",
+    "en": "create a new project",
+    "ar": "إنشاء مشروع جديد",
+    "dar": "na3mel projet jdid"
+  },
+  "reset-projects": {
+    "fr": "réinitialiser les filtres de la liste"
+  },
+  "new-task": {
+    "fr": "créer une tâche rattachée à un projet",
+    "en": "create a task on a project",
+    "ar": "إنشاء مهمة في مشروع",
+    "dar": "na3mel tache f projet"
+  },
+  "reset-tasks": {
+    "fr": "réinitialiser les filtres de la liste"
+  },
+  "ts-today": {
+    "fr": "revenir à la semaine courante"
+  },
+  "ts-prev-week": {
+    "fr": "semaine précédente"
+  },
+  "ts-next-week": {
+    "fr": "semaine suivante"
+  },
+  "ts-add-entry": {
+    "fr": "ajouter une saisie sur un jour précis",
+    "en": "add a time entry on a given day",
+    "ar": "إضافة ساعات في يوم محدد",
+    "dar": "nzid sa3at f nhar"
+  },
+  "ts-view-mode": {
+    "fr": "basculer entre la vue semaine et la vue mois"
+  },
+  "ts-resubmit": {
+    "fr": "re-soumettre une saisie refusée après correction"
+  },
+  "submit-week": {
+    "fr": "soumettre la semaine à validation",
+    "en": "submit my week for validation",
+    "ar": "إرسال أسبوعي للتحقق",
+    "dar": "nsobmiti el semaine mta3i"
+  },
+  "validate-all": {
+    "fr": "valider toutes les saisies d'un collaborateur"
+  },
+  "refuse-all": {
+    "fr": "refuser en lot (commentaire obligatoire)"
+  },
+  "validate-entry": {
+    "fr": "valider une saisie individuelle",
+    "en": "validate a submitted time entry",
+    "ar": "التحقق من إدخال الوقت",
+    "dar": "nvalidi saisie"
+  },
+  "refuse-entry": {
+    "fr": "refuser une saisie (commentaire obligatoire)",
+    "en": "refuse a time entry",
+    "ar": "رفض إدخال الوقت",
+    "dar": "nerfes saisie"
+  },
+  "val-view-mode": {
+    "fr": "basculer l'affichage (par collaborateur / par projet)"
+  },
+  "ts-export-excel": {
+    "fr": "export Excel du reporting"
+  },
+  "ts-export-pdf": {
+    "fr": "export PDF du reporting"
+  },
+  "ts-messenger": {
+    "fr": "ouvrir la messagerie (sidebar)"
+  },
+  "ms-send": {
+    "fr": "envoyer le message",
+    "en": "send a message on the project",
+    "ar": "إرسال رسالة في المشروع",
+    "dar": "neb3ath message fil projet"
+  },
+  "ms-details": {
+    "fr": "ouvrir le panneau détails du projet (membres, fichiers, médias)"
+  },
+  "ms-project": {
+    "fr": "choisir le projet dont on veut voir la conversation"
+  },
+  "ms-mode": {
+    "fr": "basculer entre Discussion et Tableau blanc"
+  }
+}

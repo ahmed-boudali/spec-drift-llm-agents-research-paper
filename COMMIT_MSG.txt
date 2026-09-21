@@ -1,0 +1,20 @@
+Initial release: drift audit instrument and measured results
+
+Measures the gap between an LLM agent's hand-written specification and the
+source code of the system it drives, on a real deployed enterprise platform
+(BI4YOU).
+
+Measured (E1, reproducible in seconds from source):
+  L1 lexical        93/94 selectors agree; 0 phantom, 1 dark
+  L2 reachability   14/14 URLs declared, but /timesheet module root is not
+  L3 authorisation  4/6 roles covered; 3 guards admit roles the spec omits
+  L4 procedural     3 confirmed instances, incl. a subsystem specified in
+                    detail that exists nowhere in the implementation
+
+Contents:
+  extractor/   recover I from Angular+Spring sources; compute drift; validate
+  benchmark/   500-item benchmark, sigma_0 / sigma_R, agent runner
+  results/     analysis script; no experimental results (E2-E5 not executed)
+
+The inference experiments are specified but not run, and this repository
+contains no execution logs.

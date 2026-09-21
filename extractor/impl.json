@@ -1,0 +1,865 @@
+{
+  "L1_lexical": {
+    "selectors": [
+      "cancel",
+      "cancel-ci",
+      "cancel-op",
+      "cash",
+      "cash-settings",
+      "client-invoices",
+      "clients",
+      "create-client",
+      "create-supplier",
+      "dashboard",
+      "delete-client",
+      "delete-supplier",
+      "doc-bulk-download",
+      "doc-clear-filters",
+      "doc-download",
+      "doc-search",
+      "doc-select-all",
+      "doc-view",
+      "draft-ops",
+      "edit",
+      "edit-client",
+      "edit-op",
+      "edit-supplier",
+      "export-cash",
+      "export-clients",
+      "export-excel",
+      "export-excel-ci",
+      "export-pdf",
+      "export-pdf-ci",
+      "export-report-pdf",
+      "export-suppliers",
+      "fd-period",
+      "finance-dashboard",
+      "finance-docs",
+      "finance-menu",
+      "focus-invoices",
+      "intelligence",
+      "leaves",
+      "ms-details",
+      "ms-mode",
+      "ms-project",
+      "ms-send",
+      "my-timesheet",
+      "net-flow",
+      "new-client-invoice",
+      "new-invoice",
+      "new-op",
+      "new-project",
+      "new-task",
+      "overdue-risk",
+      "record-payment",
+      "record-payment-ci",
+      "refuse-all",
+      "refuse-entry",
+      "reset-cash",
+      "reset-clients",
+      "reset-invoices",
+      "reset-invoices-ci",
+      "reset-projects",
+      "reset-suppliers",
+      "reset-tasks",
+      "submit-week",
+      "supplier-invoices",
+      "suppliers",
+      "timesheet-menu",
+      "total-inflows",
+      "total-outflows",
+      "total-outstanding",
+      "total-paid-month",
+      "ts-add-entry",
+      "ts-export-excel",
+      "ts-export-pdf",
+      "ts-messenger",
+      "ts-next-week",
+      "ts-prev-week",
+      "ts-projects",
+      "ts-reporting",
+      "ts-resubmit",
+      "ts-tasks",
+      "ts-today",
+      "ts-validation",
+      "ts-view-mode",
+      "upcoming-payments",
+      "val-view-mode",
+      "validate",
+      "validate-all",
+      "validate-ci",
+      "validate-entry",
+      "validate-op",
+      "view-avis",
+      "view-cheque",
+      "view-client",
+      "view-doc",
+      "view-doc-ci"
+    ],
+    "selector_sites": {
+      "cancel": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "cancel-ci": [
+        "src/app/pages/finance/client-invoices/client-invoices.html"
+      ],
+      "cancel-op": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "cash": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "cash-settings": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "client-invoices": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "clients": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "create-client": [
+        "src/app/pages/finance/clients/clients.html"
+      ],
+      "create-supplier": [
+        "src/app/pages/finance/suppliers/suppliers.html"
+      ],
+      "dashboard": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "delete-client": [
+        "src/app/pages/finance/clients/clients.html"
+      ],
+      "delete-supplier": [
+        "src/app/pages/finance/suppliers/suppliers.html"
+      ],
+      "doc-bulk-download": [
+        "src/app/pages/finance/finance-documents/finance-documents.html"
+      ],
+      "doc-clear-filters": [
+        "src/app/pages/finance/finance-documents/finance-documents.html"
+      ],
+      "doc-download": [
+        "src/app/pages/finance/finance-documents/finance-documents.html"
+      ],
+      "doc-search": [
+        "src/app/pages/finance/finance-documents/finance-documents.html"
+      ],
+      "doc-select-all": [
+        "src/app/pages/finance/finance-documents/finance-documents.html"
+      ],
+      "doc-view": [
+        "src/app/pages/finance/finance-documents/finance-documents.html"
+      ],
+      "draft-ops": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "edit": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "edit-client": [
+        "src/app/pages/finance/clients/clients.html"
+      ],
+      "edit-op": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "edit-supplier": [
+        "src/app/pages/finance/suppliers/suppliers.html"
+      ],
+      "export-cash": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "export-clients": [
+        "src/app/pages/finance/clients/clients.html"
+      ],
+      "export-excel": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "export-excel-ci": [
+        "src/app/pages/finance/client-invoices/client-invoices.html"
+      ],
+      "export-pdf": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "export-pdf-ci": [
+        "src/app/pages/finance/client-invoices/client-invoices.html"
+      ],
+      "export-report-pdf": [
+        "src/app/pages/finance/intelligence/sections/ai-reports/ai-reports-section.html"
+      ],
+      "export-suppliers": [
+        "src/app/pages/finance/suppliers/suppliers.html"
+      ],
+      "fd-period": [
+        "src/app/pages/finance/dashboard/finance-dashboard.html"
+      ],
+      "finance-dashboard": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "finance-docs": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "finance-menu": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "focus-invoices": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "intelligence": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "leaves": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "ms-details": [
+        "src/app/pages/timesheet/messenger/messenger.html"
+      ],
+      "ms-mode": [
+        "src/app/pages/timesheet/messenger/messenger.html"
+      ],
+      "ms-project": [
+        "src/app/pages/timesheet/messenger/messenger.html"
+      ],
+      "ms-send": [
+        "src/app/pages/timesheet/messenger/messenger.html"
+      ],
+      "my-timesheet": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "net-flow": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "new-client-invoice": [
+        "src/app/pages/finance/client-invoices/client-invoices.html"
+      ],
+      "new-invoice": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "new-op": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "new-project": [
+        "src/app/pages/timesheet/projects/projects.html"
+      ],
+      "new-task": [
+        "src/app/pages/timesheet/tasks/tasks.html"
+      ],
+      "overdue-risk": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "record-payment": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "record-payment-ci": [
+        "src/app/pages/finance/client-invoices/client-invoices.html"
+      ],
+      "refuse-all": [
+        "src/app/pages/timesheet/validation/validation.html"
+      ],
+      "refuse-entry": [
+        "src/app/pages/timesheet/validation/validation.html"
+      ],
+      "reset-cash": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "reset-clients": [
+        "src/app/pages/finance/clients/clients.html"
+      ],
+      "reset-invoices": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "reset-invoices-ci": [
+        "src/app/pages/finance/client-invoices/client-invoices.html"
+      ],
+      "reset-projects": [
+        "src/app/pages/timesheet/projects/projects.html"
+      ],
+      "reset-suppliers": [
+        "src/app/pages/finance/suppliers/suppliers.html"
+      ],
+      "reset-tasks": [
+        "src/app/pages/timesheet/tasks/tasks.html"
+      ],
+      "submit-week": [
+        "src/app/pages/timesheet/my-timesheet/my-timesheet.html"
+      ],
+      "supplier-invoices": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "suppliers": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "timesheet-menu": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "total-inflows": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "total-outflows": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "total-outstanding": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "total-paid-month": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "ts-add-entry": [
+        "src/app/pages/timesheet/my-timesheet/my-timesheet.html"
+      ],
+      "ts-export-excel": [
+        "src/app/pages/timesheet/reporting/reporting.html"
+      ],
+      "ts-export-pdf": [
+        "src/app/pages/timesheet/reporting/reporting.html"
+      ],
+      "ts-messenger": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "ts-next-week": [
+        "src/app/pages/timesheet/my-timesheet/my-timesheet.html"
+      ],
+      "ts-prev-week": [
+        "src/app/pages/timesheet/my-timesheet/my-timesheet.html"
+      ],
+      "ts-projects": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "ts-reporting": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "ts-resubmit": [
+        "src/app/pages/timesheet/my-timesheet/my-timesheet.html"
+      ],
+      "ts-tasks": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "ts-today": [
+        "src/app/pages/timesheet/my-timesheet/my-timesheet.html"
+      ],
+      "ts-validation": [
+        "src/app/shared/layout/layout.html"
+      ],
+      "ts-view-mode": [
+        "src/app/pages/timesheet/my-timesheet/my-timesheet.html"
+      ],
+      "upcoming-payments": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "val-view-mode": [
+        "src/app/pages/timesheet/validation/validation.html"
+      ],
+      "validate": [
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "validate-all": [
+        "src/app/pages/timesheet/validation/validation.html"
+      ],
+      "validate-ci": [
+        "src/app/pages/finance/client-invoices/client-invoices.html"
+      ],
+      "validate-entry": [
+        "src/app/pages/timesheet/validation/validation.html"
+      ],
+      "validate-op": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "view-avis": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "view-cheque": [
+        "src/app/pages/finance/cash-management/cash-management.html"
+      ],
+      "view-client": [
+        "src/app/pages/finance/clients/clients.html"
+      ],
+      "view-doc": [
+        "src/app/pages/finance/cash-management/cash-management.html",
+        "src/app/pages/finance/supplier-invoices/supplier-invoices.html"
+      ],
+      "view-doc-ci": [
+        "src/app/pages/finance/client-invoices/client-invoices.html"
+      ]
+    },
+    "count": 94
+  },
+  "L2_reachability": {
+    "routes": [
+      "/",
+      "/**",
+      "/admin/audit-logs",
+      "/candidate/application/:id",
+      "/candidate/applications",
+      "/candidate/home",
+      "/candidate/profile",
+      "/careers",
+      "/dashboard",
+      "/documents",
+      "/documents/requests",
+      "/documents/shared",
+      "/employees",
+      "/evaluations",
+      "/finance",
+      "/finance/client-invoices",
+      "/finance/clients",
+      "/finance/dashboard",
+      "/finance/documents",
+      "/finance/intelligence",
+      "/finance/invoices",
+      "/finance/suppliers",
+      "/forgot-password",
+      "/formations",
+      "/help",
+      "/jobs",
+      "/jobs/:id",
+      "/jobs/:id/apply",
+      "/leaves",
+      "/login",
+      "/profile",
+      "/recruitment",
+      "/recruitment/applicants/:id",
+      "/register",
+      "/reset-password",
+      "/set-password",
+      "/settings",
+      "/teleworks",
+      "/timesheet/messenger",
+      "/timesheet/my-timesheet",
+      "/timesheet/projects",
+      "/timesheet/reporting",
+      "/timesheet/tasks",
+      "/timesheet/validation"
+    ],
+    "guarded": {
+      "/admin/audit-logs": [
+        "adminGuard"
+      ],
+      "/recruitment": [
+        "adminHrGuard"
+      ],
+      "/employees": [
+        "adminHrGuard"
+      ],
+      "/finance/dashboard": [
+        "financeGuard"
+      ],
+      "/finance": [
+        "financeGuard"
+      ],
+      "/finance/invoices": [
+        "financeGuard"
+      ],
+      "/finance/client-invoices": [
+        "financeGuard"
+      ],
+      "/finance/suppliers": [
+        "financeGuard"
+      ],
+      "/finance/clients": [
+        "financeGuard"
+      ],
+      "/finance/intelligence": [
+        "financeGuard"
+      ],
+      "/finance/documents": [
+        "financeGuard"
+      ],
+      "/timesheet/projects": [
+        "timesheetGuard"
+      ],
+      "/timesheet/tasks": [
+        "timesheetGuard"
+      ],
+      "/timesheet/my-timesheet": [
+        "timesheetGuard"
+      ],
+      "/timesheet/validation": [
+        "managerGuard"
+      ],
+      "/timesheet/reporting": [
+        "managerGuard"
+      ],
+      "/timesheet/messenger": [
+        "timesheetGuard"
+      ],
+      "/candidate/applications": [
+        "candidateGuard"
+      ],
+      "/candidate/application/:id": [
+        "candidateGuard"
+      ],
+      "/candidate/profile": [
+        "candidateGuard"
+      ],
+      "/recruitment/applicants/:id": [
+        "adminHrGuard"
+      ]
+    },
+    "count": 44,
+    "guarded_count": 21,
+    "source": "app.routes.ts"
+  },
+  "L3_authorisation": {
+    "declared_roles": [
+      "ADMIN",
+      "CANDIDATE",
+      "COLLABORATOR",
+      "FINANCE",
+      "HR_MANAGER",
+      "MANAGER"
+    ],
+    "frontend_guards": {
+      "adminGuard": [
+        "ADMIN"
+      ],
+      "adminHrGuard": [
+        "ADMIN",
+        "HR_MANAGER"
+      ],
+      "candidateGuard": [
+        "CANDIDATE"
+      ],
+      "financeGuard": [
+        "ADMIN",
+        "FINANCE",
+        "HR_MANAGER"
+      ],
+      "managerGuard": [
+        "ADMIN",
+        "HR_MANAGER",
+        "MANAGER"
+      ],
+      "timesheetGuard": [
+        "ADMIN",
+        "COLLABORATOR",
+        "FINANCE",
+        "HR_MANAGER",
+        "MANAGER"
+      ]
+    },
+    "backend_policies": {
+      "hasAnyRole('ADMIN','HR_MANAGER')": 36,
+      "hasAnyRole('ADMIN', 'HR_MANAGER', 'MANAGER')": 18,
+      "hasAnyRole('ADMIN','HR_MANAGER','COLLABORATOR','MANAGER')": 14,
+      "hasAnyRole('ADMIN', 'FINANCE', 'HR_MANAGER')": 11,
+      "hasRole('ADMIN')": 9,
+      "hasAnyRole('ADMIN','HR_MANAGER','MANAGER')": 7,
+      "hasAnyRole('MANAGER','ADMIN','HR_MANAGER')": 6,
+      "hasAnyRole('COLLABORATOR','MANAGER','ADMIN','HR_MANAGER')": 5,
+      "hasRole('CANDIDATE')": 4,
+      "hasAnyRole('ADMIN','HR_MANAGER','MANAGER','COLLABORATOR')": 3,
+      "hasAnyRole('ADMIN', 'FINANCE')": 2,
+      "hasAnyRole('ADMIN', 'HR_MANAGER')": 1,
+      "hasAnyRole('ADMIN', 'HR_MANAGER', 'FINANCE')": 1,
+      "hasAnyRole('CANDIDATE','ADMIN','HR_MANAGER')": 1,
+      "hasAnyRole('ADMIN','HR_MANAGER','CANDIDATE')": 1
+    },
+    "policy_count_total": 119,
+    "policy_count_distinct": 15,
+    "roles_used_in_policies": [
+      "ADMIN",
+      "CANDIDATE",
+      "COLLABORATOR",
+      "FINANCE",
+      "HR_MANAGER",
+      "MANAGER"
+    ],
+    "endpoints": 245
+  },
+  "L4_procedural": {
+    "enforced_rules": {
+      "Application not found": [
+        "JobApplicationController.java",
+        "JobApplicationService.java"
+      ],
+      "Campaign not found": [
+        "EvaluationCampaignService.java",
+        "EvaluationCriteriaService.java",
+        "EvaluationService.java"
+      ],
+      "Can only delete draft leave requests": [
+        "LeaveRequestService.java"
+      ],
+      "Can only edit draft leave requests": [
+        "LeaveRequestService.java"
+      ],
+      "Candidate not found": [
+        "JobApplicationService.java"
+      ],
+      "Cannot add entries to a locked period": [
+        "TimesheetEntryService.java"
+      ],
+      "Cannot apply to expired job offers": [
+        "JobApplicationService.java"
+      ],
+      "Cannot exceed 24 hours per day. Current:": [
+        "TimesheetEntryService.java"
+      ],
+      "Cannot log hours on a non-active project": [
+        "TimesheetEntryService.java"
+      ],
+      "Cannot update entries in a locked period": [
+        "TimesheetEntryService.java"
+      ],
+      "Ce client a": [
+        "ClientService.java"
+      ],
+      "Ce fournisseur a": [
+        "SupplierService.java"
+      ],
+      "Cette facture est déjà annulée.": [
+        "ClientInvoiceService.java",
+        "SupplierInvoiceService.java"
+      ],
+      "Code de vérification invalide": [
+        "AuthService.java"
+      ],
+      "Could not initialize OnnxEmbeddingService": [
+        "OnnxEmbeddingService.java"
+      ],
+      "Criteria not found": [
+        "EvaluationCriteriaService.java",
+        "EvaluationScoreService.java",
+        "EvaluationService.java"
+      ],
+      "Demandeur not found": [
+        "DocumentRequestService.java"
+      ],
+      "Document not found": [
+        "EmployeeDocumentService.java"
+      ],
+      "Documents can only be uploaded for REALISEE trainings.": [
+        "TrainingRequestService.java"
+      ],
+      "EMAIL_EXISTS": [
+        "EmployeeService.java"
+      ],
+      "Employee not found": [
+        "DocumentUploadRequestService.java",
+        "EmployeeService.java",
+        "EvaluationService.java",
+        "LeaveRequestService.java",
+        "TeleworkRequestService.java",
+        "TrainingController.java"
+      ],
+      "Entry not found:": [
+        "TimesheetEntryService.java"
+      ],
+      "Erreur lors de l'envoi de l'e-mail:": [
+        "EmailService.java"
+      ],
+      "Erreur lors de la lecture du fichier:": [
+        "TrainingController.java"
+      ],
+      "Erreur lors du téléchargement des fichiers:": [
+        "TrainingController.java"
+      ],
+      "Evaluation not found": [
+        "AnnualObjectiveService.java",
+        "EvaluationScoreService.java",
+        "EvaluationService.java"
+      ],
+      "Job offer not found": [
+        "JobApplicationService.java"
+      ],
+      "L'administrateur ne peut pas évaluer un employé qui a déjà un manager.": [
+        "EvaluationService.java"
+      ],
+      "Le code de vérification a expiré": [
+        "AuthService.java"
+      ],
+      "Leave request is not approved by manager": [
+        "LeaveRequestService.java"
+      ],
+      "Leave request is not in submitted status": [
+        "LeaveRequestService.java"
+      ],
+      "Leave request not found": [
+        "LeaveRequestService.java"
+      ],
+      "Limite hebdomadaire de télétravail dépassée. Vous ne pouvez faire qu'un jour par semaine.": [
+        "TeleworkRequestService.java"
+      ],
+      "Manager not found": [
+        "EvaluationService.java",
+        "LeaveRequestService.java",
+        "TeleworkRequestService.java",
+        "TrainingRequestService.java"
+      ],
+      "No entry ids provided": [
+        "TimesheetEntryController.java",
+        "TimesheetEntryService.java"
+      ],
+      "Not authenticated": [
+        "UserController.java"
+      ],
+      "Objective not found": [
+        "AnnualObjectiveService.java"
+      ],
+      "Offer not found:": [
+        "JobOfferService.java"
+      ],
+      "Only BROUILLON entries can be deleted": [
+        "TimesheetEntryService.java"
+      ],
+      "Only BROUILLON or REFUSE entries can be updated": [
+        "TimesheetEntryService.java"
+      ],
+      "Only SOUMIS entries can be refused": [
+        "TimesheetEntryService.java"
+      ],
+      "Only SOUMIS entries can be validated": [
+        "TimesheetEntryService.java"
+      ],
+      "Only SOUMISE requests can be validated.": [
+        "TrainingRequestService.java"
+      ],
+      "Only VALIDEE requests can be planned.": [
+        "TrainingRequestService.java"
+      ],
+      "Period is already locked": [
+        "TimesheetPeriodService.java"
+      ],
+      "Period is not locked": [
+        "TimesheetPeriodService.java"
+      ],
+      "Period not found:": [
+        "TimesheetPeriodService.java"
+      ],
+      "Project code already exists:": [
+        "ProjectService.java"
+      ],
+      "Project not found:": [
+        "ProjectService.java",
+        "TaskService.java",
+        "TimesheetEntryService.java"
+      ],
+      "Refresh token is not in database!": [
+        "AuthService.java"
+      ],
+      "Refresh token was expired. Please make a new signin request": [
+        "RefreshTokenService.java"
+      ],
+      "Refusal comment is mandatory": [
+        "TimesheetEntryService.java"
+      ],
+      "Request not found": [
+        "DocumentRequestService.java",
+        "TeleworkRequestService.java"
+      ],
+      "Score not found": [
+        "EvaluationScoreService.java"
+      ],
+      "Seules les factures en brouillon peuvent être modifiées.": [
+        "SupplierInvoiceService.java"
+      ],
+      "Seules les factures en brouillon peuvent être validées.": [
+        "ClientInvoiceService.java",
+        "SupplierInvoiceService.java"
+      ],
+      "Seules les factures validées peuvent recevoir un paiement.": [
+        "ClientInvoiceService.java",
+        "InvoicePaymentService.java",
+        "SupplierInvoiceService.java"
+      ],
+      "Seules les formations validées ou planifiées peuvent être modifiées.": [
+        "TrainingRequestService.java"
+      ],
+      "Seules les opérations en brouillon peuvent être modifiées.": [
+        "CashService.java"
+      ],
+      "Seules les opérations en brouillon peuvent être validées.": [
+        "CashService.java"
+      ],
+      "Shared document not found": [
+        "SharedDocumentService.java"
+      ],
+      "Solde insuffisant pour approuver cette demande": [
+        "LeaveRequestService.java"
+      ],
+      "Solde insuffisant pour la modification demandée": [
+        "LeaveRequestService.java"
+      ],
+      "Solde insuffisant pour le congé demandé": [
+        "LeaveRequestService.java"
+      ],
+      "Task does not belong to the specified project": [
+        "TimesheetEntryService.java"
+      ],
+      "Task not found:": [
+        "TaskService.java",
+        "TimesheetEntryService.java"
+      ],
+      "Training request not found": [
+        "TrainingRequestService.java"
+      ],
+      "Un justificatif est obligatoire pour valider une opération.": [
+        "CashService.java"
+      ],
+      "Un motif d'annulation est obligatoire.": [
+        "CashService.java",
+        "ClientInvoiceService.java",
+        "SupplierInvoiceService.java"
+      ],
+      "Un utilisateur avec cet e-mail existe déjà": [
+        "AuthService.java"
+      ],
+      "Unauthorized access": [
+        "LeaveRequestService.java"
+      ],
+      "Une facture validée ne peut pas être supprimée.": [
+        "ClientInvoiceService.java",
+        "SupplierInvoiceService.java"
+      ],
+      "Une opération validée ne peut pas être supprimée.": [
+        "CashService.java"
+      ],
+      "Upload request not found": [
+        "DocumentUploadRequestService.java"
+      ],
+      "Uploader not found": [
+        "SharedDocumentService.java"
+      ],
+      "User not found": [
+        "EmployeeController.java",
+        "EmployeeService.java",
+        "EvaluationService.java",
+        "JobApplicationController.java",
+        "TeleworkRequestService.java",
+        "TrainingRequestService.java",
+        "UserController.java"
+      ],
+      "User not found with email:": [
+        "RefreshTokenService.java"
+      ],
+      "User not found:": [
+        "LeaveRequestService.java"
+      ],
+      "Utilisateur non trouvé": [
+        "AuthService.java"
+      ],
+      "Utilisateur non trouvé avec cet e-mail": [
+        "AuthService.java"
+      ],
+      "Utilisateur non trouvé avec l'ID:": [
+        "EmployeeDocumentService.java"
+      ],
+      "Vous ne pouvez pas demander plus d'un jour de télétravail à la fois.": [
+        "TeleworkRequestService.java"
+      ],
+      "You can only delete your own entries": [
+        "TimesheetEntryService.java"
+      ],
+      "You can only update your own entries": [
+        "TimesheetEntryService.java"
+      ],
+      "You have already applied to this job offer": [
+        "JobApplicationService.java"
+      ],
+      "projectId is required": [
+        "TimesheetEntryService.java"
+      ]
+    },
+    "count": 86
+  }
+}

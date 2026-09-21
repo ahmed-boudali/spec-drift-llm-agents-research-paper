@@ -1,0 +1,681 @@
+{
+  "source": "FinanceAIService.java",
+  "lines": 638,
+  "characters": 37701,
+  "L1_selectors": [
+    "cancel",
+    "cancel-ci",
+    "cancel-op",
+    "cash",
+    "cash-settings",
+    "client-invoices",
+    "clients",
+    "create-client",
+    "create-supplier",
+    "dashboard",
+    "delete-client",
+    "delete-supplier",
+    "doc-bulk-download",
+    "doc-clear-filters",
+    "doc-download",
+    "doc-search",
+    "doc-select-all",
+    "doc-view",
+    "draft-ops",
+    "edit",
+    "edit-client",
+    "edit-op",
+    "edit-supplier",
+    "export-cash",
+    "export-clients",
+    "export-excel",
+    "export-excel-ci",
+    "export-pdf",
+    "export-pdf-ci",
+    "export-report-pdf",
+    "export-suppliers",
+    "fd-period",
+    "finance-dashboard",
+    "finance-docs",
+    "finance-menu",
+    "focus-invoices",
+    "intelligence",
+    "ms-details",
+    "ms-mode",
+    "ms-project",
+    "ms-send",
+    "my-timesheet",
+    "net-flow",
+    "new-client-invoice",
+    "new-invoice",
+    "new-op",
+    "new-project",
+    "new-task",
+    "overdue-risk",
+    "record-payment",
+    "record-payment-ci",
+    "refuse-all",
+    "refuse-entry",
+    "reset-cash",
+    "reset-clients",
+    "reset-invoices",
+    "reset-invoices-ci",
+    "reset-projects",
+    "reset-suppliers",
+    "reset-tasks",
+    "submit-week",
+    "supplier-invoices",
+    "suppliers",
+    "timesheet-menu",
+    "total-inflows",
+    "total-outflows",
+    "total-outstanding",
+    "total-paid-month",
+    "ts-add-entry",
+    "ts-export-excel",
+    "ts-export-pdf",
+    "ts-messenger",
+    "ts-next-week",
+    "ts-prev-week",
+    "ts-projects",
+    "ts-reporting",
+    "ts-resubmit",
+    "ts-tasks",
+    "ts-today",
+    "ts-validation",
+    "ts-view-mode",
+    "upcoming-payments",
+    "val-view-mode",
+    "validate",
+    "validate-all",
+    "validate-ci",
+    "validate-entry",
+    "validate-op",
+    "view-avis",
+    "view-cheque",
+    "view-client",
+    "view-doc",
+    "view-doc-ci"
+  ],
+  "L1_excluded_schema_artefacts": [
+    "selector"
+  ],
+  "L2_urls": [
+    "/finance",
+    "/finance/client-invoices",
+    "/finance/clients",
+    "/finance/dashboard",
+    "/finance/documents",
+    "/finance/intelligence",
+    "/finance/invoices",
+    "/finance/suppliers",
+    "/timesheet",
+    "/timesheet/messenger",
+    "/timesheet/my-timesheet",
+    "/timesheet/projects",
+    "/timesheet/reporting",
+    "/timesheet/tasks",
+    "/timesheet/validation"
+  ],
+  "L3_roles_mentioned": [
+    "ADMIN",
+    "COLLABORATOR",
+    "FINANCE",
+    "HR_MANAGER",
+    "MANAGER"
+  ],
+  "L4_quoted_rules": [
+    "Allez dans **Clients**.",
+    "Allez dans **Factures Clients**.",
+    "Allez dans **Factures Fournisseurs**.",
+    "Allez dans **Fournisseurs**.",
+    "Allez dans **Projets**.",
+    "Allez dans **Tâches**.",
+    "Après enregistrement du brouillon, validez-la ici.",
+    "Basculez en vue mois pour avoir une vision d'ensemble de vos heures.",
+    "Cannot add entries to a locked period",
+    "Cannot exceed 24 hours per day",
+    "Cannot log hours on a non-active project",
+    "Cannot update entries in a locked\nperiod",
+    "Ce KPI montre le total encore impayé — utile pour repérer les factures à régler.",
+    "Ce panneau montre les membres, les fichiers et les médias du projet.",
+    "Cette référence existe déjà :",
+    "Choisissez la période : mois, trimestre, année ou plage personnalisée. Tous les indicateurs suivent ce choix.",
+    "Cliquez **Nouveau client** pour créer une fiche client.",
+    "Cliquez **Nouveau fournisseur** pour créer une fiche.",
+    "Cliquez **Nouvelle facture** pour créer une facture client.",
+    "Cliquez ici pour télécharger un fichier Excel avec toutes vos factures filtrées.",
+    "Cliquez pour créer une tâche et rattachez-la à un projet actif.",
+    "Cliquez sur **Clients**.",
+    "Cliquez sur **Factures Clients**.",
+    "Cliquez sur **Factures Fournisseurs**.",
+    "Cliquez sur **Intelligence** : les rapports IA sont dans la colonne de gauche.",
+    "Cliquez sur **Ma feuille de temps**.",
+    "Cliquez sur **Messagerie** pour discuter par projet.",
+    "Cliquez sur **Médiathèque** : tous les justificatifs y sont regroupés.",
+    "Cliquez sur **Nouvelle facture**. Le formulaire s'ouvre.",
+    "Cliquez sur **Refuser**. Le commentaire est obligatoire : il explique au collaborateur ce qu'il doit corriger.",
+    "Cliquez sur **Trésorerie**.",
+    "Cliquez sur **Validation** : seules les saisies SOUMIS y apparaissent.",
+    "Cliquez sur **Vue Finance**.",
+    "Cliquez sur une ligne pour ouvrir la fiche : contacts, encours et historique.",
+    "Dernière étape : cliquez **Valider** sur sa ligne. La facture devient VALIDÉE et n'est plus modifiable.",
+    "Exportez en Excel, ou utilisez l'export PDF juste à côté.",
+    "GET_CASH_BALANCE",
+    "GET_DASHBOARD",
+    "LIST_CLIENT_INVOICES",
+    "Le KPI **flux net** reflète immédiatement l'opération validée.",
+    "Nouveau projet",
+    "Nouvelle facture",
+    "Nouvelle opération",
+    "Nouvelle tâche",
+    "Only SOUMIS entries can be validated",
+    "Ou ici pour générer un PDF imprimable.",
+    "Ouvrez **Factures Fournisseurs** (le principe est le même sur toutes les listes).",
+    "Ouvrez **Ma feuille de temps** : les saisies refusées sont signalées en haut.",
+    "Ouvrez **Ma feuille de temps** et vérifiez que la semaine est complète.",
+    "Ouvrez **Ma feuille de temps**.",
+    "Ouvrez **Reporting**.",
+    "Ouvrez **Trésorerie**.",
+    "Ouvrez la **Messagerie**.",
+    "Ouvrez la **Médiathèque**.",
+    "Ouvrez la page **Validation**.",
+    "Ouvrez le document dans la visionneuse, ou téléchargez-le juste à côté.",
+    "Ouvrez le menu **Finance** dans la barre latérale.",
+    "Ouvrez le menu **Finance**.",
+    "Ouvrez le menu **Timesheet** dans la barre latérale.",
+    "Ouvrez le menu **Timesheet**.",
+    "Ouvrez le menu Finance.",
+    "Period is already locked",
+    "Pour refuser, cliquez ici : le commentaire est **obligatoire**, il indique au collaborateur quoi corriger.",
+    "Project code already exists",
+    "Recherchez par nom de document, client ou fournisseur.",
+    "Reculez d'une semaine pour compléter une saisie oubliée.",
+    "Refusal comment is mandatory",
+    "Seules les factures validées peuvent recevoir un paiement.",
+    "Soumettre la semaine",
+    "Step instruction",
+    "Sur la ligne d'une facture **VALIDÉE**, cliquez l'icône **Paiement** (€ vert). Sur une brouillon, le paiement est refusé.",
+    "Sur la ligne de la facture validée, cliquez **Encaisser** (icône €).",
+    "Sélectionnez les documents voulus, ou cliquez ici pour tout prendre.",
+    "Task does not belong to the specified project",
+    "Téléchargez toute la sélection en une fois.",
+    "Un justificatif est obligatoire pour valider une\n          opération.",
+    "Un justificatif est obligatoire.",
+    "Un motif d'annulation est obligatoire.",
+    "Une fois le rapport généré, exportez-le en PDF depuis ce bouton.",
+    "Vous pouvez aussi exporter toute la liste en Excel.",
+    "Your message to the user (markdown ok: **bold**, *italic*, newlines)"
+  ],
+  "tours": {
+    "saisir mes heures": [
+      {
+        "selector": "[data-nav='timesheet-menu']",
+        "message": "Ouvrez le menu **Timesheet** dans la barre latérale."
+      },
+      {
+        "selector": "[data-nav='my-timesheet']",
+        "message": "Cliquez sur **Ma feuille de temps**."
+      },
+      {
+        "selector": "[data-nav='ts-today']",
+        "message": "**1/5** — **Aujourd'hui** ramène à la semaine courante ; les flèches changent de semaine."
+      },
+      {
+        "selector": "[data-nav='my-timesheet']",
+        "message": "**2/5 — Projet.** Choisissez-le dans la liste. Seuls les projets ACTIFS acceptent des heures."
+      },
+      {
+        "selector": "[data-nav='my-timesheet']",
+        "message": "**3/5 — Tâche.** Elle doit appartenir au projet choisi, sinon la saisie est refusée."
+      },
+      {
+        "selector": "[data-nav='my-timesheet']",
+        "message": "**4/5 — Heures.** Saisissez-les dans la case du jour. Maximum 24 h par jour, toutes lignes confondues."
+      },
+      {
+        "selector": "[data-nav='submit-week']",
+        "message": "**5/5** — Enregistrez : vos saisies sont en BROUILLON, encore modifiables. Soumettez la semaine quand elle est complète."
+      }
+    ],
+    "soumettre ma semaine": [
+      {
+        "selector": "[data-nav='my-timesheet']",
+        "message": "Ouvrez **Ma feuille de temps** et vérifiez que la semaine est complète."
+      },
+      {
+        "selector": "[data-nav='submit-week']",
+        "message": "**1/3** — Cliquez sur **Soumettre la semaine**, puis confirmez."
+      },
+      {
+        "selector": "[data-nav='submit-week']",
+        "message": "**2/3** — Vos saisies passent en SOUMIS : la grille devient lecture seule, plus aucune modification n'est possible."
+      },
+      {
+        "selector": "[data-nav='submit-week']",
+        "message": "**3/3** — Si votre manager refuse une saisie, elle repasse en REFUSE avec son commentaire : corrigez-la puis re-soumettez."
+      }
+    ],
+    "valider les saisies": [
+      {
+        "selector": "[data-nav='timesheet-menu']",
+        "message": "Ouvrez le menu **Timesheet**."
+      },
+      {
+        "selector": "[data-nav='ts-validation']",
+        "message": "Cliquez sur **Validation** : seules les saisies SOUMIS y apparaissent."
+      },
+      {
+        "selector": "[data-nav='validate-entry']",
+        "message": "**Option 1 — à l'unité.** Examinez la ligne puis cliquez **Valider**."
+      },
+      {
+        "selector": "[data-nav='validate-all']",
+        "message": "**Option 2 — en lot.** Validez toutes les saisies d'un collaborateur d'un seul clic."
+      },
+      {
+        "selector": "[data-nav='refuse-entry']",
+        "message": "Pour refuser, cliquez ici : le commentaire est **obligatoire**, il indique au collaborateur quoi corriger."
+      }
+    ],
+    "refuser une saisie": [
+      {
+        "selector": "[data-nav='ts-validation']",
+        "message": "Ouvrez la page **Validation**."
+      },
+      {
+        "selector": "[data-nav='refuse-entry']",
+        "message": "Cliquez sur **Refuser**. Le commentaire est obligatoire : il explique au collaborateur ce qu'il doit corriger."
+      }
+    ],
+    "créer un projet": [
+      {
+        "selector": "[data-nav='timesheet-menu']",
+        "message": "Ouvrez le menu **Timesheet**."
+      },
+      {
+        "selector": "[data-nav='ts-projects']",
+        "message": "Allez dans **Projets**."
+      },
+      {
+        "selector": "[data-nav='new-project']",
+        "message": "**1/4** — Cliquez sur **Nouveau projet** (réservé aux managers et administrateurs)."
+      },
+      {
+        "selector": "[data-nav='new-project']",
+        "message": "**2/4** — Saisissez le **code** : il doit être unique, sinon la création est refusée."
+      },
+      {
+        "selector": "[data-nav='new-project']",
+        "message": "**3/4** — Renseignez le nom, les dates et les membres de l'équipe."
+      },
+      {
+        "selector": "[data-nav='ts-tasks']",
+        "message": "**4/4** — Enregistrez : le projet est ACTIF. Créez ensuite ses tâches ici pour que l'équipe puisse saisir des heures."
+      }
+    ],
+    "créer une tâche": [
+      {
+        "selector": "[data-nav='ts-tasks']",
+        "message": "Allez dans **Tâches**."
+      },
+      {
+        "selector": "[data-nav='new-task']",
+        "message": "Cliquez pour créer une tâche et rattachez-la à un projet actif."
+      }
+    ],
+    "exporter le reporting": [
+      {
+        "selector": "[data-nav='ts-reporting']",
+        "message": "Ouvrez **Reporting**."
+      },
+      {
+        "selector": "[data-nav='ts-export-excel']",
+        "message": "Exportez en Excel, ou utilisez l'export PDF juste à côté."
+      }
+    ],
+    "utiliser la messagerie projet": [
+      {
+        "selector": "[data-nav='timesheet-menu']",
+        "message": "Ouvrez le menu **Timesheet**."
+      },
+      {
+        "selector": "[data-nav='ts-messenger']",
+        "message": "Cliquez sur **Messagerie** pour discuter par projet."
+      },
+      {
+        "selector": "[data-nav='ms-send']",
+        "message": "Écrivez votre message puis envoyez-le. Vous pouvez joindre un fichier ou réagir avec un emoji."
+      },
+      {
+        "selector": "[data-nav='ms-details']",
+        "message": "Ce panneau montre les membres, les fichiers et les médias du projet."
+      }
+    ],
+    "consulter le tableau de bord finance": [
+      {
+        "selector": "[data-nav='finance-menu']",
+        "message": "Ouvrez le menu **Finance**."
+      },
+      {
+        "selector": "[data-nav='finance-dashboard']",
+        "message": "Cliquez sur **Vue Finance**."
+      },
+      {
+        "selector": "[data-nav='fd-period']",
+        "message": "Choisissez la période : mois, trimestre, année ou plage personnalisée. Tous les indicateurs suivent ce choix."
+      }
+    ],
+    "trouver un justificatif": [
+      {
+        "selector": "[data-nav='finance-menu']",
+        "message": "Ouvrez le menu **Finance**."
+      },
+      {
+        "selector": "[data-nav='finance-docs']",
+        "message": "Cliquez sur **Médiathèque** : tous les justificatifs y sont regroupés."
+      },
+      {
+        "selector": "[data-nav='doc-search']",
+        "message": "Recherchez par nom de document, client ou fournisseur."
+      },
+      {
+        "selector": "[data-nav='doc-view']",
+        "message": "Ouvrez le document dans la visionneuse, ou téléchargez-le juste à côté."
+      }
+    ],
+    "télécharger plusieurs documents": [
+      {
+        "selector": "[data-nav='finance-docs']",
+        "message": "Ouvrez la **Médiathèque**."
+      },
+      {
+        "selector": "[data-nav='doc-select-all']",
+        "message": "Sélectionnez les documents voulus, ou cliquez ici pour tout prendre."
+      },
+      {
+        "selector": "[data-nav='doc-bulk-download']",
+        "message": "Téléchargez toute la sélection en une fois."
+      }
+    ],
+    "générer un rapport IA": [
+      {
+        "selector": "[data-nav='finance-menu']",
+        "message": "Ouvrez le menu **Finance**."
+      },
+      {
+        "selector": "[data-nav='intelligence']",
+        "message": "Cliquez sur **Intelligence** : les rapports IA sont dans la colonne de gauche."
+      },
+      {
+        "selector": "[data-nav='export-report-pdf']",
+        "message": "Une fois le rapport généré, exportez-le en PDF depuis ce bouton."
+      }
+    ],
+    "corriger une saisie refusée": [
+      {
+        "selector": "[data-nav='my-timesheet']",
+        "message": "Ouvrez **Ma feuille de temps** : les saisies refusées sont signalées en haut."
+      },
+      {
+        "selector": "[data-nav='ts-resubmit']",
+        "message": "**1/3** — Lisez le commentaire du manager : il explique ce qui doit être corrigé."
+      },
+      {
+        "selector": "[data-nav='ts-add-entry']",
+        "message": "**2/3** — Une saisie REFUSE redevient modifiable : corrigez les heures ou le projet."
+      },
+      {
+        "selector": "[data-nav='ts-resubmit']",
+        "message": "**3/3** — Re-soumettez-la. Elle repasse en SOUMIS pour une nouvelle validation."
+      }
+    ],
+    "naviguer entre les semaines": [
+      {
+        "selector": "[data-nav='my-timesheet']",
+        "message": "Ouvrez **Ma feuille de temps**."
+      },
+      {
+        "selector": "[data-nav='ts-prev-week']",
+        "message": "Reculez d'une semaine pour compléter une saisie oubliée."
+      },
+      {
+        "selector": "[data-nav='ts-today']",
+        "message": "**Aujourd'hui** vous ramène directement à la semaine en cours."
+      },
+      {
+        "selector": "[data-nav='ts-view-mode']",
+        "message": "Basculez en vue mois pour avoir une vision d'ensemble de vos heures."
+      }
+    ],
+    "filtrer et exporter une liste": [
+      {
+        "selector": "[data-nav='supplier-invoices']",
+        "message": "Ouvrez **Factures Fournisseurs** (le principe est le même sur toutes les listes)."
+      },
+      {
+        "selector": "[data-nav='export-excel']",
+        "message": "**1/3** — Appliquez d'abord vos filtres : statut, période, fournisseur, montant."
+      },
+      {
+        "selector": "[data-nav='export-excel']",
+        "message": "**2/3** — L'export reprend exactement les filtres actifs, pas toute la base."
+      },
+      {
+        "selector": "[data-nav='reset-invoices']",
+        "message": "**3/3** — Ce bouton remet tous les filtres à zéro quand vous avez fini."
+      }
+    ],
+    "consulter la fiche d'un client": [
+      {
+        "selector": "[data-nav='finance-menu']",
+        "message": "Ouvrez le menu **Finance**."
+      },
+      {
+        "selector": "[data-nav='clients']",
+        "message": "Cliquez sur **Clients**."
+      },
+      {
+        "selector": "[data-nav='view-client']",
+        "message": "Cliquez sur une ligne pour ouvrir la fiche : contacts, encours et historique."
+      },
+      {
+        "selector": "[data-nav='export-clients']",
+        "message": "Vous pouvez aussi exporter toute la liste en Excel."
+      }
+    ],
+    "régler le solde d'ouverture": [
+      {
+        "selector": "[data-nav='cash']",
+        "message": "Ouvrez **Trésorerie**."
+      },
+      {
+        "selector": "[data-nav='cash-settings']",
+        "message": "**1/2** — Cliquez sur **Ajuster solde initial**."
+      },
+      {
+        "selector": "[data-nav='cash-settings']",
+        "message": "**2/2** — Saisissez le solde de départ de la caisse : il sert de base à tous les calculs de solde."
+      }
+    ],
+    "utiliser le tableau blanc du projet": [
+      {
+        "selector": "[data-nav='ts-messenger']",
+        "message": "Ouvrez la **Messagerie**."
+      },
+      {
+        "selector": "[data-nav='ms-project']",
+        "message": "**1/2** — Choisissez le projet concerné."
+      },
+      {
+        "selector": "[data-nav='ms-mode']",
+        "message": "**2/2** — Basculez sur **Tableau blanc** : il est partagé avec toute l'équipe du projet."
+      }
+    ],
+    "créer une facture fournisseur": [
+      {
+        "selector": "[data-nav='finance-menu']",
+        "message": "Ouvrez le menu **Finance** dans la barre latérale."
+      },
+      {
+        "selector": "[data-nav='supplier-invoices']",
+        "message": "Cliquez sur **Factures Fournisseurs**."
+      },
+      {
+        "selector": "[data-nav='new-invoice']",
+        "message": "Cliquez sur **Nouvelle facture**. Le formulaire s'ouvre."
+      },
+      {
+        "selector": "[data-nav='new-invoice']",
+        "message": "**1/6 — Fournisseur.** Choisissez-le dans la liste : sa devise et son délai de paiement se remplissent tout seuls. S'il n'existe pas, créez-le d'abord dans Fournisseurs."
+      },
+      {
+        "selector": "[data-nav='new-invoice']",
+        "message": "**2/6 — Référence et dates.** Laissez la référence vide pour qu'elle soit générée (FF-2026-0001). Saisissez la date de facture ; l'échéance est proposée automatiquement."
+      },
+      {
+        "selector": "[data-nav='new-invoice']",
+        "message": "**3/6 — Montants.** Devise, montant HT et taux de TVA. Le TTC se calcule seul. Le montant doit être supérieur à 0."
+      },
+      {
+        "selector": "[data-nav='new-invoice']",
+        "message": "**4/6 — Retenue à la source.** Si elle s'applique, cochez l'option et saisissez le taux : le net à payer se recalcule."
+      },
+      {
+        "selector": "[data-nav='new-invoice']",
+        "message": "**5/6 — Règlement.** Virement (banque + date) ou Chèque (numéro, nom, échéance)."
+      },
+      {
+        "selector": "[data-nav='new-invoice']",
+        "message": "**6/6 — Justificatif OBLIGATOIRE.** Joignez un PDF ou une image, sinon l'enregistrement est refusé. Puis enregistrez : la facture est en BROUILLON."
+      },
+      {
+        "selector": "[data-nav='validate']",
+        "message": "Dernière étape : cliquez **Valider** sur sa ligne. La facture devient VALIDÉE et n'est plus modifiable."
+      }
+    ],
+    "enregistrer un paiement fournisseur": [
+      {
+        "selector": "[data-nav='supplier-invoices']",
+        "message": "Allez dans **Factures Fournisseurs**."
+      },
+      {
+        "selector": "[data-nav='total-outstanding']",
+        "message": "Ce KPI montre le total encore impayé — utile pour repérer les factures à régler."
+      },
+      {
+        "selector": "[data-nav='record-payment']",
+        "message": "Sur la ligne d'une facture **VALIDÉE**, cliquez l'icône **Paiement** (€ vert). Sur une brouillon, le paiement est refusé."
+      },
+      {
+        "selector": "[data-nav='record-payment']",
+        "message": "**1/3** — Saisissez le montant réglé (supérieur à 0). Il peut être partiel."
+      },
+      {
+        "selector": "[data-nav='record-payment']",
+        "message": "**2/3** — Indiquez le mode et la date du règlement, puis joignez la preuve de paiement."
+      },
+      {
+        "selector": "[data-nav='record-payment']",
+        "message": "**3/3** — Enregistrez. Le statut passe à PARTIELLEMENT_PAYEE, ou PAYEE si le net à payer est atteint. Vous pouvez enchaîner plusieurs paiements."
+      }
+    ],
+    "créer une facture client": [
+      {
+        "selector": "[data-nav='finance-menu']",
+        "message": "Ouvrez le menu Finance."
+      },
+      {
+        "selector": "[data-nav='client-invoices']",
+        "message": "Cliquez sur **Factures Clients**."
+      },
+      {
+        "selector": "[data-nav='new-client-invoice']",
+        "message": "Cliquez **Nouvelle facture** pour créer une facture client."
+      },
+      {
+        "selector": "[data-nav='validate-ci']",
+        "message": "Après enregistrement du brouillon, validez-la ici."
+      }
+    ],
+    "encaisser un paiement client": [
+      {
+        "selector": "[data-nav='client-invoices']",
+        "message": "Allez dans **Factures Clients**."
+      },
+      {
+        "selector": "[data-nav='record-payment-ci']",
+        "message": "Sur la ligne de la facture validée, cliquez **Encaisser** (icône €)."
+      }
+    ],
+    "créer une opération de trésorerie": [
+      {
+        "selector": "[data-nav='finance-menu']",
+        "message": "Ouvrez le menu **Finance** dans la barre latérale."
+      },
+      {
+        "selector": "[data-nav='cash']",
+        "message": "Cliquez sur **Trésorerie**."
+      },
+      {
+        "selector": "[data-nav='new-op']",
+        "message": "**1/5** — Cliquez **Nouvelle opération**."
+      },
+      {
+        "selector": "[data-nav='new-op']",
+        "message": "**2/5 — Type.** ENCAISSEMENT pour une entrée d'argent, DÉCAISSEMENT pour une sortie."
+      },
+      {
+        "selector": "[data-nav='new-op']",
+        "message": "**3/5** — Date, montant, catégorie et description. La catégorie sert aux regroupements et aux analyses."
+      },
+      {
+        "selector": "[data-nav='new-op']",
+        "message": "**4/5** — Mode de règlement, puis joignez le justificatif (PDF ou image)."
+      },
+      {
+        "selector": "[data-nav='new-op']",
+        "message": "**5/5** — Enregistrez : l'opération est en BROUILLON et **ne modifie pas encore le solde**."
+      },
+      {
+        "selector": "[data-nav='validate-op']",
+        "message": "Cliquez **Valider** sur sa ligne pour l'intégrer au solde. Sans justificatif, la validation est refusée. Une fois validée, elle ne peut plus être supprimée."
+      },
+      {
+        "selector": "[data-nav='net-flow']",
+        "message": "Le KPI **flux net** reflète immédiatement l'opération validée."
+      }
+    ],
+    "ajouter un fournisseur": [
+      {
+        "selector": "[data-nav='suppliers']",
+        "message": "Allez dans **Fournisseurs**."
+      },
+      {
+        "selector": "[data-nav='create-supplier']",
+        "message": "Cliquez **Nouveau fournisseur** pour créer une fiche."
+      }
+    ],
+    "ajouter un client": [
+      {
+        "selector": "[data-nav='clients']",
+        "message": "Allez dans **Clients**."
+      },
+      {
+        "selector": "[data-nav='create-client']",
+        "message": "Cliquez **Nouveau client** pour créer une fiche client."
+      }
+    ],
+    "exporter les factures": [
+      {
+        "selector": "[data-nav='export-excel']",
+        "message": "Cliquez ici pour télécharger un fichier Excel avec toutes vos factures filtrées."
+      },
+      {
+        "selector": "[data-nav='export-pdf']",
+        "message": "Ou ici pour générer un PDF imprimable."
+      }
+    ]
+  },
+  "tour_count": 26
+}

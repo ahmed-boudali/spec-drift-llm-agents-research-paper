@@ -1,0 +1,218 @@
+{
+  "L1_lexical": {
+    "phantom": [],
+    "dark": [
+      "leaves"
+    ],
+    "agreed": [
+      "cancel",
+      "cancel-ci",
+      "cancel-op",
+      "cash",
+      "cash-settings",
+      "client-invoices",
+      "clients",
+      "create-client",
+      "create-supplier",
+      "dashboard",
+      "delete-client",
+      "delete-supplier",
+      "doc-bulk-download",
+      "doc-clear-filters",
+      "doc-download",
+      "doc-search",
+      "doc-select-all",
+      "doc-view",
+      "draft-ops",
+      "edit",
+      "edit-client",
+      "edit-op",
+      "edit-supplier",
+      "export-cash",
+      "export-clients",
+      "export-excel",
+      "export-excel-ci",
+      "export-pdf",
+      "export-pdf-ci",
+      "export-report-pdf",
+      "export-suppliers",
+      "fd-period",
+      "finance-dashboard",
+      "finance-docs",
+      "finance-menu",
+      "focus-invoices",
+      "intelligence",
+      "ms-details",
+      "ms-mode",
+      "ms-project",
+      "ms-send",
+      "my-timesheet",
+      "net-flow",
+      "new-client-invoice",
+      "new-invoice",
+      "new-op",
+      "new-project",
+      "new-task",
+      "overdue-risk",
+      "record-payment",
+      "record-payment-ci",
+      "refuse-all",
+      "refuse-entry",
+      "reset-cash",
+      "reset-clients",
+      "reset-invoices",
+      "reset-invoices-ci",
+      "reset-projects",
+      "reset-suppliers",
+      "reset-tasks",
+      "submit-week",
+      "supplier-invoices",
+      "suppliers",
+      "timesheet-menu",
+      "total-inflows",
+      "total-outflows",
+      "total-outstanding",
+      "total-paid-month",
+      "ts-add-entry",
+      "ts-export-excel",
+      "ts-export-pdf",
+      "ts-messenger",
+      "ts-next-week",
+      "ts-prev-week",
+      "ts-projects",
+      "ts-reporting",
+      "ts-resubmit",
+      "ts-tasks",
+      "ts-today",
+      "ts-validation",
+      "ts-view-mode",
+      "upcoming-payments",
+      "val-view-mode",
+      "validate",
+      "validate-all",
+      "validate-ci",
+      "validate-entry",
+      "validate-op",
+      "view-avis",
+      "view-cheque",
+      "view-client",
+      "view-doc",
+      "view-doc-ci"
+    ],
+    "n_spec": 93,
+    "n_impl": 94,
+    "n_agreed": 93
+  },
+  "L2_reachability": {
+    "phantom": [
+      "/timesheet"
+    ],
+    "dark": [],
+    "agreed": [
+      "/finance",
+      "/finance/client-invoices",
+      "/finance/clients",
+      "/finance/dashboard",
+      "/finance/documents",
+      "/finance/intelligence",
+      "/finance/invoices",
+      "/finance/suppliers",
+      "/timesheet/messenger",
+      "/timesheet/my-timesheet",
+      "/timesheet/projects",
+      "/timesheet/reporting",
+      "/timesheet/tasks",
+      "/timesheet/validation"
+    ],
+    "n_spec": 15,
+    "n_impl": 14,
+    "n_agreed": 14,
+    "note": "/timesheet is reported as phantom and this is a real finding, not an extraction artefact: 'finance' IS a declared route (CashManagement) while 'timesheet' is NOT, so a bare /timesheet falls through to the ** NotFound wildcard. Sigma's parallel '/finance/*' and '/timesheet/*' phrasing implies a module-root symmetry the router does not have."
+  },
+  "L3_authorisation": {
+    "phantom": [],
+    "dark": [
+      "CANDIDATE",
+      "FINANCE"
+    ],
+    "agreed": [
+      "ADMIN",
+      "COLLABORATOR",
+      "HR_MANAGER",
+      "MANAGER"
+    ],
+    "n_spec": 4,
+    "n_impl": 6,
+    "n_agreed": 4,
+    "roles_mentioned_raw": [
+      "ADMIN",
+      "COLLABORATOR",
+      "FINANCE",
+      "HR_MANAGER",
+      "MANAGER"
+    ],
+    "roles_discounted": [
+      "FINANCE"
+    ],
+    "note": "FINANCE appears in Sigma exactly once, inside the phantom accounting-period rule (L4-01), never in the role enumeration. Counted as not covered; see drift.py header.",
+    "guard_surprises": {
+      "candidateGuard": {
+        "admits": [
+          "CANDIDATE"
+        ],
+        "unstated_in_spec": [
+          "CANDIDATE"
+        ]
+      },
+      "financeGuard": {
+        "admits": [
+          "ADMIN",
+          "FINANCE",
+          "HR_MANAGER"
+        ],
+        "unstated_in_spec": [
+          "FINANCE"
+        ]
+      },
+      "timesheetGuard": {
+        "admits": [
+          "ADMIN",
+          "COLLABORATOR",
+          "FINANCE",
+          "HR_MANAGER",
+          "MANAGER"
+        ],
+        "unstated_in_spec": [
+          "FINANCE"
+        ]
+      }
+    }
+  },
+  "L4_procedural": {
+    "enforced_rule_count": 86,
+    "spec_quoted_rule_count": 81,
+    "automatic_alignment": false,
+    "confirmed_instances": [
+      {
+        "id": "L4-01",
+        "type": "phantom_subsystem",
+        "claim": "Finance accounting periods with OPEN/LOCKED states blocking invoice and cash-operation creation.",
+        "evidence": "No accounting-period entity, repository, service or precondition exists in finance-service.",
+        "note": "An analogous mechanism IS implemented in timesheet-service (TimesheetPeriod.locked)."
+      },
+      {
+        "id": "L4-02",
+        "type": "over_constraint",
+        "claim": "A receipt is mandatory when creating a supplier invoice.",
+        "evidence": "The receipt rule exists only for cash operations at validation time; SupplierInvoiceService has no such precondition on creation."
+      },
+      {
+        "id": "L4-03",
+        "type": "incomplete_procedure",
+        "claim": "Tour 'exporter les factures' instructs the user to click export-excel / export-pdf.",
+        "evidence": "The tour contains no navigation step. Both controls live on /finance/invoices, so the sequence is unexecutable from any other route. It is the only one of the 26 tours that does not open with a sidebar step; cf. 'filtrer et exporter une liste', which navigates correctly.",
+        "discovered_by": "validator.py self-test (not manual audit)"
+      }
+    ]
+  }
+}
